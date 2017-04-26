@@ -1,0 +1,9 @@
+<h3> Edit House </h3>
+
+<%= form_for @house do |f| %>
+ <%= f.label :House %>
+  <%=f.text_field :name %>
+<br>
+  <%= f.submit "Create" %>
+
+  <% end %>

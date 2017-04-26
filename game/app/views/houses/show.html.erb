@@ -1,0 +1,8 @@
+<h3>House :<%= @house.name %> </h3>
+
+<% @house.characters.each do |character| %>
+  <h4>Character Name : <%= character.name %></h4>
+  <h4> Character Pers :  <%= character.personality %>
+    <% end %><br>
+<%=link_to "Edit House",edit_house_path(@house) %>
+<%= link_to "Delete House", @house, method: :delete, data:{ confirm:"Are you sure"} %><br>
